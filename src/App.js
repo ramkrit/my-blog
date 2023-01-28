@@ -11,6 +11,9 @@ import ArticalePage from "./pages/ArticalePage";
 import AboutPage from "./pages/AboutPage";
 import NoteFoundPage from "./pages/NotFoundPage";
 import NavBar from "./NavBar";
+import LoginPage from "./pages/LoginPage";
+import CreateAccountPage from "./pages/CreateAccountPage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +25,8 @@ function App() {
               <Route exact path="/articale-list" element={<ArticaleListPage />}/>
               <Route exact path="/articale/:articleId" element={<ArticalePage />}/>
               <Route exact path="/about" element={<AboutPage />}/>
+              <Route exact path="/login" element={<LoginPage />}/>
+              <Route exact path="/create-account" element={<CreateAccountPage />}/>
               <Route exact path="*" element={<NoteFoundPage />}/>
             </Routes>
         </div>

@@ -24,6 +24,8 @@ nav {
   top: 0;
   width: 100%;
   background: white;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -91,7 +93,7 @@ nav a:hover {
   width: 320px;
 }
 
-#upvotes-section button, p {
+.upvotes-section button, p {
   display: inline-block;
   margin-right: 16px;
 }
@@ -99,4 +101,10 @@ nav a:hover {
 .comment {
   border-bottom: 2px solid black;
   padding: 16px;
+}
+.error-message {
+  color: red;
+}
+.nav-right {
+  text-align: right;
 }
